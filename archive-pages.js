@@ -69,3 +69,26 @@ document.addEventListener('click',e=>{
  dialog.addEventListener('close',()=>dialog.remove(),{once:true});
  dialog.showModal();close.focus();
 });
+
+// Keep every archival slide, and reconnect images when originals are available locally.
+document.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.elementor-image-carousel a[href="#unavailable-asset"]').forEach(a=>{
+  const img=a.querySelector('img');if(!img)return;
+  let filename='';
+  const hash=a.getAttribute('e-action-hash')||'';
+  try{
+   const segment=decodeURIComponent(hash).split('settings=')[1];
+   if(segment)filename=JSON.parse(atob(segment)).url.split('/').pop();
+  }catch(err){}
+  if(!filename)return;
+  const options=['../assets/archive-images/','../assets/','../assets/images/'].map(p=>p+filename);
+  let i=0;
+  function test(){
+   if(i===options.length)return;
+   const path=options[i++],probe=new Image();
+   probe.onload=()=>{img.src=path;a.href=path;img.classList.remove('swiper-lazy');a.style.pointerEvents='auto'};
+   probe.onerror=test;probe.src=path;
+  }
+  test();
+ });
+});
