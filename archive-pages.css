@@ -76,3 +76,15 @@ body:not(.home) .elementor-global-195{display:none!important}
 /* Compact album requested: no full-player tracklist duplicates. */
 .archive-bandcamp-player .archive-bandcamp-tracklist{display:none}
 .archive-bandcamp-player{max-height:none!important;overflow:visible!important}
+
+/* True original p5-slider thumb artwork reused in a small static inner-page banner. */
+.archive-original-logo{display:block;width:min(620px,78vw);max-width:calc(100% - 24px);margin:0 auto 22px;line-height:1;text-decoration:none}
+.archive-logo-letters{display:flex;align-items:center;justify-content:center;width:100%;gap:0}
+.archive-logo-letters .ddb-image-letter{display:block;flex:1 1 0;min-width:0;width:calc(100% / 13);height:auto;aspect-ratio:1;object-fit:contain;transition:transform .2s ease}
+.archive-logo-letters .ddb-image-letter:nth-child(odd){transform:translateY(-4px)}
+.archive-logo-letters .ddb-image-letter:nth-child(even){transform:translateY(4px)}
+.archive-original-logo:hover .ddb-image-letter:nth-child(odd){transform:translateY(0)}
+.archive-original-logo:hover .ddb-image-letter:nth-child(even){transform:translateY(-3px)}
+.archive-original-logo:focus-visible{outline:2px solid #1684d4;outline-offset:6px}
+@media(max-width:767px){.archive-original-logo{width:min(440px,90vw);margin-bottom:16px}}
+@media(prefers-reduced-motion:reduce){.archive-logo-letters .ddb-image-letter{transition:none}}
