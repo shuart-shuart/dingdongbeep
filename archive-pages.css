@@ -71,4 +71,8 @@ body:not(.home) .elementor-global-195{display:none!important}
 @media(prefers-reduced-motion:reduce){.archive-compact-word .ddb-letter{transition:none}}
 /* Allow the album player to grow to the height of its adjacent location text. */
 .archive-bandcamp-player{max-height:none!important;overflow:visible!important}
-.archive-bandcamp-embed-slot iframe{height:var(--ddb-bandcamp-height,430px)!important;max-height:786px}
+.archive-bandcamp-embed-slot iframe{height:120px!important;max-height:120px!important;width:100%!important;max-width:100%!important}
+
+/* Compact album requested: no full-player tracklist duplicates. */
+.archive-bandcamp-player .archive-bandcamp-tracklist{display:none}
+.archive-bandcamp-player{max-height:none!important;overflow:visible!important}
