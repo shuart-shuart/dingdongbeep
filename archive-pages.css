@@ -156,3 +156,67 @@ body:not(.home) .elementor-column,body:not(.home) .elementor-widget-wrap{min-wid
  .ddb-unified-nav{font-size:11px!important}
  .ddb-unified-header+.ddb-banner{height:88px!important}
 }
+
+/* PR21 — size the instrument in document flow, not by a fixed-height box.
+   Padding participates in layout; transformed letters did not. */
+body:not(.home) .ddb-unified-header + .ddb-banner{
+  display:block!important;
+  position:relative!important;
+  box-sizing:border-box;
+  width:min(760px,calc(100% - 32px))!important;
+  max-width:calc(100% - 32px)!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:clamp(30px,5vw,76px) auto!important;
+  padding:0!important;
+  clear:both;
+}
+body:not(.home) .ddb-banner-inner{
+  display:flex!important;
+  align-items:stretch!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+}
+body:not(.home) .ddb-banner .ddb-note{
+  display:flex;
+  flex:1 1 0;
+  min-width:0;
+  box-sizing:border-box;
+  height:auto!important;
+  padding-top:calc(var(--step) * clamp(7px,1.45vw,19px));
+  transform:none!important;
+  align-items:center;
+  justify-content:flex-start;
+}
+body:not(.home) .ddb-banner .ddb-note img{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  flex:0 0 auto;
+  object-fit:contain;
+  aspect-ratio:1;
+}
+body:not(.home) .ddb-unified-header + .ddb-banner + #content{
+  display:block;
+  position:relative;
+  clear:both;
+  margin-top:0!important;
+}
+@media (max-width:767px){
+  body:not(.home) .ddb-unified-header + .ddb-banner{
+    width:calc(100% - 28px)!important;
+    max-width:calc(100% - 28px)!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:clamp(24px,7vw,52px) auto!important;
+  }
+  body:not(.home) .ddb-banner .ddb-note{
+    padding-top:calc(var(--step) * clamp(3px,1.45vw,9px));
+    transform:none!important;
+  }
+}
+@media (max-width:380px){
+  body:not(.home) .ddb-unified-header + .ddb-banner{height:auto!important}
+}
