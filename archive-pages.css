@@ -52,3 +52,23 @@ body:not(.home) .elementor-global-195{display:none!important}
 .archive-bandcamp-embed-slot iframe{display:block;width:100%!important;max-width:350px;height:clamp(280px,40vh,430px)!important;border:0}
 .archive-bandcamp-player{max-height:calc(100vh - 160px);overflow-y:auto;overscroll-behavior:contain}
 @media(max-width:767px){.archive-bandcamp-player{max-height:none;overflow:visible}.archive-bandcamp-embed-slot iframe{height:430px!important}}
+
+/* Review proposal: compact letter-instrument, never a second full-size canvas. */
+.archive-compact-logo{display:block;position:relative;z-index:10;width:max-content;max-width:calc(100% - 28px);margin:3px auto 18px;text-decoration:none!important;text-align:center;line-height:1}
+.archive-compact-word{display:flex;justify-content:center;align-items:baseline;white-space:nowrap;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:clamp(24px,3.7vw,56px);letter-spacing:-.065em}
+.archive-compact-word .ddb-letter{display:inline-block;transition:transform .18s ease}
+.archive-compact-word .ddb-letter:nth-child(3n + 1){color:#e53f46;transform:translateY(2px)}
+.archive-compact-word .ddb-letter:nth-child(3n + 2){color:#199e63;transform:translateY(-2px)}
+.archive-compact-word .ddb-letter:nth-child(3n){color:#178ce0}
+.archive-compact-logo:hover .ddb-letter:nth-child(odd){transform:translateY(-6px)}
+.archive-compact-logo:hover .ddb-letter:nth-child(even){transform:translateY(5px)}
+.archive-compact-dots{display:flex;justify-content:space-around;margin:5px auto 0;width:82%}
+.archive-compact-dots i{width:clamp(3px,.5vw,6px);height:clamp(3px,.5vw,6px);border-radius:50%;background:#e53f46}
+.archive-compact-dots i:nth-child(3n + 2){background:#199e63}
+.archive-compact-dots i:nth-child(3n){background:#178ce0}
+.archive-compact-logo:focus-visible{outline:2px solid #178ce0;outline-offset:8px}
+@media(max-width:767px){.archive-compact-logo{margin:6px auto 16px}.archive-compact-word{font-size:clamp(23px,6vw,36px)}}
+@media(prefers-reduced-motion:reduce){.archive-compact-word .ddb-letter{transition:none}}
+/* Allow the album player to grow to the height of its adjacent location text. */
+.archive-bandcamp-player{max-height:none!important;overflow:visible!important}
+.archive-bandcamp-embed-slot iframe{height:var(--ddb-bandcamp-height,430px)!important;max-height:786px}
