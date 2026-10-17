@@ -1,28 +1,37 @@
-/* Navigation uses the home page's left links, central date, right credits. */
-.archive-nav{display:grid;grid-template-columns:2fr 1fr 1fr;align-items:start;padding:20px 50px 0;position:relative;z-index:100;background:white;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6}
-.archive-nav-left{display:flex;flex-direction:column;align-items:flex-start}
-.archive-nav-date{text-align:left;white-space:nowrap}
-.archive-nav-right{text-align:right}
-.archive-nav a{color:#111;text-decoration:none;width:fit-content}
-.archive-nav a:hover,.archive-nav a:focus-visible{text-decoration:underline}
-.archive-nav a[aria-current=page]{text-decoration:underline;text-underline-offset:3px}
-.archive-nav .red{color:#ed4242}.archive-nav .green{color:#34a86c}.archive-nav .blue{color:#4485d8}
-.archive-nav .up{display:inline-block;transform:translateY(-3px)}.archive-nav .down{display:inline-block;transform:translateY(3px)}
-body{margin:0}img{max-width:100%;height:auto}iframe{max-width:100%}.elementor-image-gallery img{height:auto}
+/* Archive subpage navigation, modelled on the homepage masthead. */
+.archive-nav{
+ display:grid!important;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr)!important;
+ position:relative!important;z-index:50;align-items:start!important;gap:0!important;
+ box-sizing:border-box!important;width:100%!important;max-width:100%!important;
+ margin:0!important;padding:20px 0 0!important;background:#fff;
+ font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.55;
+}
+.archive-nav-left{display:flex;flex-flow:column nowrap;align-items:flex-start;min-width:0;padding-left:50px}
+.archive-nav-left a{display:block;width:max-content;max-width:100%;line-height:1.5}
+.archive-nav-date{text-align:left;min-width:0;overflow-wrap:normal}
+.archive-nav-right{text-align:right;min-width:0;padding-right:50px}
+.archive-nav a{color:#111;text-decoration:none;white-space:normal}
+.archive-nav a:hover,.archive-nav a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.archive-nav a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.archive-nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:3px}
+.archive-nav .red{color:#e94242}.archive-nav .green{color:#279c65}.archive-nav .blue{color:#337bd6}
+.archive-nav .up,.archive-nav .down{display:inline-block}
+.archive-nav .up{transform:translateY(-3px)}.archive-nav .down{transform:translateY(3px)}
+@media(max-width:767px){
+ .archive-nav{grid-template-columns:minmax(0,1fr) auto!important;grid-template-rows:auto auto!important;padding:20px 0 0!important}
+ .archive-nav-left{grid-column:1;grid-row:1;padding-left:22px}
+ .archive-nav-right{grid-column:2;grid-row:1;padding-right:22px}
+ .archive-nav-date{grid-column:1 / -1;grid-row:2;text-align:center;margin:20px 10px 0}
+}
+body{margin:0}img{max-width:100%;height:auto}iframe{max-width:100%}
+.elementor-image-gallery img{height:auto}
 .archive-carousel-ready .elementor-image-carousel{display:block!important;transform:none!important}
 .archive-carousel-ready .swiper-slide{box-sizing:border-box}
 .archive-carousel-ready .elementor-image-carousel-wrapper{touch-action:pan-y;outline-offset:4px}
 .archive-lightbox{border:0;background:transparent;padding:16px;max-width:96vw;max-height:96vh}
 .archive-lightbox::backdrop{background:rgba(0,0,0,.85)}
 .archive-lightbox img{display:block;object-fit:contain;max-width:90vw;max-height:85vh}
-.archive-lightbox button{position:absolute;top:0;right:4px;border:0;background:white;font-size:30px;cursor:pointer}
+.archive-lightbox button{position:absolute;top:0;right:4px;border:0;background:#fff;font-size:30px;cursor:pointer}
 a[href="#unavailable-asset"]{pointer-events:none;cursor:default}
-@media(max-width:767px){.archive-nav{grid-template-columns:1fr auto;gap:10px;padding:20px 22px}.archive-nav-date{grid-column:1/-1;grid-row:2;text-align:center}.archive-nav-right{grid-column:2;grid-row:1}.archive-nav-left{grid-column:1;grid-row:1}}
-/* Homepage-inspired masthead: left menu, centre exhibition dates, right credits. */
-.archive-nav{box-sizing:border-box;width:100%;grid-template-columns:50% 25% 25%;gap:0;align-items:start;padding:20px 50px 0;font-family:inherit;font-size:inherit;line-height:inherit}
-.archive-nav-left a{display:block;line-height:1.6}.archive-nav-right{justify-self:end}
-.archive-nav a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 .archive-bandcamp{max-width:560px;margin:40px auto;padding:18px;text-align:center}
 .archive-bandcamp a{display:inline-block;margin:10px auto;text-decoration:underline}
-.archive-media-missing{display:flex;min-height:100px;align-items:center;justify-content:center;background:#f7f7f7;color:#555;text-align:center;font-size:13px;padding:12px}
-@media(max-width:767px){.archive-nav{grid-template-columns:1fr auto;gap:8px;padding:20px 22px 0}.archive-nav-left{grid-row:1;grid-column:1}.archive-nav-right{grid-row:1;grid-column:2}.archive-nav-date{grid-column:1/-1;grid-row:2;padding-top:12px;text-align:center}}
