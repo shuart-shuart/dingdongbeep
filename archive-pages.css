@@ -102,3 +102,7 @@ body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position
 .archive-carousel-ready .elementor-swiper-button-prev::before{content:"‹"}
 .archive-carousel-ready .elementor-swiper-button-next::before{content:"›"}
 .archive-carousel-ready .elementor-swiper-button:focus-visible{outline:2px solid #00a7d9;outline-offset:3px}
+
+/* Unobtrusive transparent controls; retain a usable hit target without a disc. */
+.archive-carousel-ready .elementor-swiper-button{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;min-width:32px;min-height:40px;text-shadow:0 0 3px rgba(255,255,255,.9);font-size:clamp(24px,2.4vw,34px)!important}
+@media(max-width:767px){.archive-carousel-ready .elementor-swiper-button{min-width:28px;min-height:36px;font-size:28px!important}}
