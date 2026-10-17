@@ -7,3 +7,6 @@ button:focus-visible, a:focus-visible, input[type="range"]:focus-visible { outli
 input[type="range"] { touch-action: none; }
 input[type="range"]::-moz-range-track { height: 1px; background: #fff; border: 0; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+
+/* Bold homepage nav labels without changing their original colors or layout. */
+.elementor-180 .elementor-element-d01b438 a{font-weight:700!important}
