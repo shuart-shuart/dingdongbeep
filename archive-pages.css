@@ -82,3 +82,13 @@ body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position
 .ddb-unified-header+.ddb-banner{margin-top:59px!important}
 .ddb-banner .ddb-note i{display:none!important}
 @media(max-width:767px){.ddb-unified-header+.ddb-banner{margin-top:37px!important}}
+
+/* Keep instrument completely below the navigation, including tall letter artwork. */
+.ddb-unified-header{padding-bottom:12px!important}
+.ddb-unified-header+.ddb-banner{margin-top:82px!important}
+.ddb-unified-nav{font-family:"monotype-grotesque",Arial,Helvetica,sans-serif!important;font-size:14.5px!important;line-height:21px!important;letter-spacing:1.3px!important}
+.ddb-unified-nav a{font-family:inherit!important;font-weight:700!important;letter-spacing:inherit!important}
+@media(max-width:767px){.ddb-unified-header{padding-bottom:8px!important}.ddb-unified-header+.ddb-banner{margin-top:60px!important}.ddb-unified-nav{font-size:14.5px!important;line-height:21px!important}}
+/* Brand-color surfaces for mixed-image artwork; photographs themselves are unchanged. */
+.ddb-mix-red{background-color:#f52648}.ddb-mix-blue{background-color:#09a9d9}.ddb-mix-green{background-color:#30b64b}
+.ddb-mix-red img,.ddb-mix-blue img,.ddb-mix-green img{mix-blend-mode:multiply}
