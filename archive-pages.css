@@ -69,3 +69,6 @@ body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position
 .ddb-unified-credits{grid-column:3;justify-self:end}
 .ddb-unified-header+.ddb-banner{display:block!important;position:relative!important;z-index:1!important;margin:42px auto 20px!important;height:clamp(145px,18vw,245px)!important}
 @media(max-width:767px){.ddb-unified-header{padding:16px 15px 0!important;min-height:88px}.ddb-unified-nav{grid-template-columns:1fr auto!important;row-gap:9px!important;font-size:12px!important}.ddb-unified-left{grid-column:1/-1;gap:15px}.ddb-unified-date{grid-column:1;grid-row:2;justify-self:start;white-space:normal}.ddb-unified-credits{grid-column:2;grid-row:2}.ddb-unified-header+.ddb-banner{margin:22px auto 12px!important;height:clamp(110px,25vw,160px)!important}}
+
+/* Match homepage nav weight on all four recovered inner pages. */
+.ddb-unified-header .ddb-unified-nav a{font-weight:700!important}
