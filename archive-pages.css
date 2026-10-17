@@ -41,3 +41,20 @@ a[href="#unavailable-asset"]{pointer-events:none;cursor:default}
 body.elementor-page-107 .hoverover,body.elementor-page-144 .hoverover,body.elementor-page-107 .hoverover1,body.elementor-page-144 .hoverover1{position:static!important;top:auto!important;bottom:auto!important;left:auto!important;right:auto!important;width:auto!important;height:auto!important;display:inline!important;margin:0!important;padding:0!important;z-index:auto!important;pointer-events:auto!important}
 body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position:relative;z-index:1;display:block;clear:both;margin:15px auto 12px}
 @media(max-width:767px){.archive-restored-header{padding:16px 16px 0}.archive-restored-nav{grid-template-columns:1fr auto;row-gap:10px;font-size:13px}.archive-restored-left{grid-column:1 / -1;gap:15px}.archive-restored-date{grid-column:1;grid-row:2;white-space:normal}.archive-restored-credits{grid-column:2;grid-row:2}}
+
+/* Homepage navigation layout reproduced for all four archive pages,
+   isolated from instrument slider styles and legacy Elementor fixed widgets. */
+.ddb-unified-header{position:relative;z-index:100;background:#fff;padding:20px 3vw 0}
+.ddb-unified-nav{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:start;gap:12px;font-family:Arial,Helvetica,sans-serif;font-size:clamp(12px,1vw,16px);line-height:1.4;letter-spacing:.04em}
+.ddb-unified-left{display:flex;gap:clamp(20px,3vw,50px);align-items:center;flex-wrap:wrap}
+.ddb-unified-nav a{position:relative!important;inset:auto!important;display:inline-block!important;color:#111;text-decoration:none;white-space:nowrap;pointer-events:auto!important;z-index:2}
+.ddb-unified-nav a.ddb-nav-notes{color:#fa1644}
+.ddb-unified-nav a.ddb-nav-works{color:#31b14c}
+.ddb-unified-nav a.ddb-nav-move{color:#04a9d9}
+.ddb-unified-credits{justify-self:end}
+.ddb-unified-nav a:hover,.ddb-unified-nav a:focus-visible,.ddb-unified-nav a[aria-current=page]{text-decoration:underline}
+.ddb-unified-date{white-space:nowrap;text-align:center;letter-spacing:.06em}
+.ddb-unified-date .red{color:#f5284f}.ddb-unified-date .green{color:#30b64b}.ddb-unified-date .blue{color:#07a9d8}
+.ddb-unified-date .up{position:relative;top:-2px}.ddb-unified-date .down{position:relative;top:2px}
+.ddb-unified-header + .ddb-banner{position:relative;z-index:1;clear:both;margin:18px auto 12px}
+@media(max-width:767px){.ddb-unified-header{padding:16px 18px 0}.ddb-unified-nav{grid-template-columns:1fr auto;font-size:13px}.ddb-unified-left{grid-column:1/-1;gap:16px}.ddb-unified-date{grid-column:1;grid-row:2;white-space:normal;text-align:left}.ddb-unified-credits{grid-column:2;grid-row:2}}
