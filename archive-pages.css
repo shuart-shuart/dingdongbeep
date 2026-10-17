@@ -72,3 +72,13 @@ body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position
 
 /* Match homepage nav weight on all four recovered inner pages. */
 .ddb-unified-header .ddb-unified-nav a{font-weight:700!important}
+
+/* PR16: match the homepage's monotype grotesque, character-lift hover
+   treatment without its global fixed-position widget rules. */
+.ddb-unified-nav{font-family:monotype-grotesque,Arial,Helvetica,sans-serif!important}
+.ddb-unified-nav a{font-weight:700!important;letter-spacing:1.2px!important;text-decoration:none!important}
+.ddb-unified-nav a .ddb-hover-char{display:inline-block;position:relative;top:0;transition:top .12s ease}
+.ddb-unified-nav a:hover .ddb-hover-char:nth-child(odd),.ddb-unified-nav a:focus-visible .ddb-hover-char:nth-child(odd){top:2px}
+.ddb-unified-header+.ddb-banner{margin-top:59px!important}
+.ddb-banner .ddb-note i{display:none!important}
+@media(max-width:767px){.ddb-unified-header+.ddb-banner{margin-top:37px!important}}
