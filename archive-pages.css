@@ -223,3 +223,72 @@ body:not(.home) .ddb-unified-header + .ddb-banner + #content{
 
 /* The archived Swiper loading overlays persist even after images load. */
 body:not(.home) .swiper-lazy-preloader,body:not(.home) .swiper-lazy-preloader::before,body:not(.home) .swiper-lazy-preloader::after{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
+
+/* PR23: layout-level guarantee that the artwork's measured height precedes content. */
+body:not(.home){display:flow-root}
+body:not(.home) .ddb-unified-header{position:relative;z-index:2}
+body:not(.home) .ddb-unified-header + .ddb-banner{
+  display:block!important;
+  position:relative!important;
+  float:none!important;
+  transform:none!important;
+  clear:both!important;
+  width:min(760px,calc(100% - 32px))!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:clamp(36px,6vw,76px) auto!important;
+  padding:0!important;
+  overflow:visible;
+  contain:layout;
+}
+body:not(.home) .ddb-unified-header + .ddb-banner .ddb-banner-inner{
+  display:grid!important;
+  grid-template-columns:repeat(13,minmax(0,1fr));
+  align-items:start!important;
+  gap:0;
+  width:100%;
+  height:auto!important;
+  min-height:0!important;
+}
+body:not(.home) .ddb-banner .ddb-note{
+  display:block!important;
+  position:relative!important;
+  min-width:0!important;
+  width:100%;
+  height:auto!important;
+  max-width:100%;
+  box-sizing:border-box;
+  margin:0!important;
+  padding-top:calc(var(--step) * clamp(7px,1.45vw,19px));
+  transform:none!important;
+}
+body:not(.home) .ddb-banner .ddb-note img{
+  display:block!important;
+  position:static!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:auto!important;
+  aspect-ratio:1;
+  object-fit:contain;
+  transform:rotate(-90deg)!important;
+}
+body:not(.home) .ddb-unified-header + .ddb-banner + #content{
+  display:block!important;
+  position:relative!important;
+  float:none!important;
+  clear:both!important;
+  transform:none!important;
+  margin-top:0!important;
+  min-width:0;
+  isolation:isolate;
+}
+@media(max-width:767px){
+ body:not(.home) .ddb-unified-header + .ddb-banner{
+   width:calc(100% - 28px)!important;
+   margin:clamp(28px,8vw,56px) auto!important;
+   height:auto!important;
+ }
+ body:not(.home) .ddb-banner .ddb-note{
+   padding-top:calc(var(--step) * clamp(3px,1.45vw,9px));
+ }
+}
