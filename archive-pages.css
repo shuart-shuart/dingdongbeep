@@ -92,3 +92,13 @@ body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position
 /* Brand-color surfaces for mixed-image artwork; photographs themselves are unchanged. */
 .ddb-mix-red{background-color:#f52648}.ddb-mix-blue{background-color:#09a9d9}.ddb-mix-green{background-color:#30b64b}
 .ddb-mix-red img,.ddb-mix-blue img,.ddb-mix-green img{mix-blend-mode:multiply}
+
+/* PR18: equal clearance above and below the instrument block. */
+.ddb-unified-header+.ddb-banner{margin-block:96px!important}
+@media(max-width:767px){.ddb-unified-header+.ddb-banner{margin-block:64px!important}}
+/* Native symbol arrows: no missing icon font or image dependency. */
+.archive-carousel-ready .elementor-swiper-button{display:flex!important;align-items:center;justify-content:center;cursor:pointer;z-index:8;min-width:40px;min-height:40px;color:#111;background:rgba(255,255,255,.9);border:1px solid currentColor;border-radius:50%;font:700 28px/1 Arial,sans-serif}
+.archive-carousel-ready .elementor-swiper-button i,.archive-carousel-ready .elementor-swiper-button svg,.archive-carousel-ready .elementor-swiper-button img{display:none!important}
+.archive-carousel-ready .elementor-swiper-button-prev::before{content:"‹"}
+.archive-carousel-ready .elementor-swiper-button-next::before{content:"›"}
+.archive-carousel-ready .elementor-swiper-button:focus-visible{outline:2px solid #00a7d9;outline-offset:3px}
