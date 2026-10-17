@@ -72,3 +72,16 @@ body:not(.home) .elementor-global-195{display:none!important}
 /* Allow the album player to grow to the height of its adjacent location text. */
 .archive-bandcamp-player{max-height:none!important;overflow:visible!important}
 .archive-bandcamp-embed-slot iframe{height:var(--ddb-bandcamp-height,430px)!important;max-height:786px}
+
+/* Original archival instrument appearance: independently staggered PNG letters
+   with colored note underlines (reference: December 2022 site recording). */
+.ddb-original-banner{display:block!important;width:min(780px,88vw)!important;max-width:calc(100% - 24px);margin:10px auto 38px!important;text-decoration:none}
+.ddb-banner-letters{display:flex;align-items:flex-start;justify-content:center;height:clamp(125px,14vw,205px);width:100%}
+.ddb-banner-note{--unit:clamp(13px,1.85vw,27px);display:flex;flex:1 1 0;min-width:0;align-items:center;flex-direction:column;position:relative;transform:translateY(calc(var(--note) * var(--unit)))}
+.ddb-banner-note img{width:100%;max-width:78px;height:auto;aspect-ratio:1;object-fit:contain}
+.ddb-banner-note i{display:block;height:2px;width:90%;background:#fc0640}
+.ddb-banner-note:nth-child(3n+2) i{background:#27b74a}
+.ddb-banner-note:nth-child(3n) i{background:#06afe5}
+.ddb-original-banner:hover .ddb-banner-note{filter:brightness(1.12)}
+.ddb-original-banner:focus-visible{outline:2px solid #06afe5;outline-offset:6px}
+@media(max-width:767px){.ddb-original-banner{width:94vw!important;margin-bottom:18px!important}.ddb-banner-letters{height:clamp(75px,22vw,125px)}.ddb-banner-note{--unit:clamp(7px,2vw,13px)}.ddb-banner-note i{height:1px}}
