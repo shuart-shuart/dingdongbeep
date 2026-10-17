@@ -1,28 +1,21 @@
-/* Archive subpage navigation, modelled on the homepage masthead. */
-.archive-nav{
- display:grid!important;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr)!important;
- position:relative!important;z-index:50;align-items:start!important;gap:0!important;
- box-sizing:border-box!important;width:100%!important;max-width:100%!important;
- margin:0!important;padding:20px 0 0!important;background:#fff;
- font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.55;
-}
-.archive-nav-left{display:flex;flex-flow:column nowrap;align-items:flex-start;min-width:0;padding-left:50px}
-.archive-nav-left a{display:block;width:max-content;max-width:100%;line-height:1.5}
-.archive-nav-date{text-align:left;min-width:0;overflow-wrap:normal}
-.archive-nav-right{text-align:right;min-width:0;padding-right:50px}
-.archive-nav a{color:#111;text-decoration:none;white-space:normal}
-.archive-nav a:hover,.archive-nav a:focus-visible{text-decoration:underline;text-underline-offset:3px}
-.archive-nav a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
-.archive-nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:3px}
-.archive-nav .red{color:#e94242}.archive-nav .green{color:#279c65}.archive-nav .blue{color:#337bd6}
-.archive-nav .up,.archive-nav .down{display:inline-block}
-.archive-nav .up{transform:translateY(-3px)}.archive-nav .down{transform:translateY(3px)}
-@media(max-width:767px){
- .archive-nav{grid-template-columns:minmax(0,1fr) auto!important;grid-template-rows:auto auto!important;padding:20px 0 0!important}
- .archive-nav-left{grid-column:1;grid-row:1;padding-left:22px}
- .archive-nav-right{grid-column:2;grid-row:1;padding-right:22px}
- .archive-nav-date{grid-column:1 / -1;grid-row:2;text-align:center;margin:20px 10px 0}
-}
+/* Restored inner-page banner and four-page navigation, guided by the original 2022 design deck. */
+.archive-nav{position:relative;z-index:20;display:block!important;box-sizing:border-box;width:100%;margin:0!important;padding:12px 24px 14px!important;background:#fff;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4}
+.archive-nav-left{display:flex!important;flex-direction:row!important;align-items:center;gap:clamp(12px,3vw,44px);padding:0!important;margin:0 0 12px}
+.archive-nav a{color:#111;text-decoration:none;white-space:nowrap}
+.archive-nav a:hover,.archive-nav a:focus-visible{text-decoration:underline;text-underline-offset:4px}
+.archive-nav a:focus-visible{outline:2px solid #3274c8;outline-offset:4px}
+.archive-nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:4px}
+.archive-nav-right{position:absolute;right:24px;top:12px;padding:0!important}
+.archive-nav-date{display:none!important}
+.archive-home-banner{display:block;position:relative;text-align:center;text-decoration:none!important;font-size:clamp(28px,5vw,72px);font-weight:800;letter-spacing:-.07em;line-height:1.1;margin:8px auto 0;width:max-content;max-width:100%}
+.archive-home-banner span{display:inline-block;transition:transform .2s}
+.archive-home-banner span:nth-child(3n+1){color:#ef4845;transform:translateY(3px)}
+.archive-home-banner span:nth-child(3n+2){color:#36a76a;transform:translateY(-3px)}
+.archive-home-banner span:nth-child(3n){color:#407bd6}
+.archive-home-banner:hover span:nth-child(odd){transform:translateY(-8px) rotate(-4deg)}
+.archive-home-banner:hover span:nth-child(even){transform:translateY(6px) rotate(4deg)}
+.archive-nav-page{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media(max-width:767px){.archive-nav{padding:12px 14px 16px!important}.archive-nav-left{gap:10px;flex-wrap:wrap;padding-right:63px!important;font-size:13px}.archive-nav-right{right:14px;top:12px;font-size:13px}.archive-home-banner{margin-top:14px;font-size:clamp(28px,8vw,48px)}}
 body{margin:0}img{max-width:100%;height:auto}iframe{max-width:100%}
 .elementor-image-gallery img{height:auto}
 .archive-carousel-ready .elementor-image-carousel{display:block!important;transform:none!important}
