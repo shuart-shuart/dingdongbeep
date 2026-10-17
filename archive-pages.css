@@ -1,23 +1,20 @@
-/* Restored inner-page banner and four-page navigation, guided by the original 2022 design deck. */
-.archive-nav{position:relative;z-index:20;display:block!important;box-sizing:border-box;width:100%;margin:0!important;padding:12px 24px 14px!important;background:#fff;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4}
-.archive-nav-left{display:flex!important;flex-direction:row!important;align-items:center;gap:clamp(12px,3vw,44px);padding:0!important;margin:0 0 12px}
-.archive-nav a{color:#111;text-decoration:none;white-space:nowrap}
-.archive-nav a:hover,.archive-nav a:focus-visible{text-decoration:underline;text-underline-offset:4px}
-.archive-nav a:focus-visible{outline:2px solid #3274c8;outline-offset:4px}
-.archive-nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:4px}
-.archive-nav-right{position:absolute;right:24px;top:12px;padding:0!important}
-.archive-nav-date{display:none!important}
-.archive-home-banner{display:block;position:relative;text-align:center;text-decoration:none!important;font-size:clamp(28px,5vw,72px);font-weight:800;letter-spacing:-.07em;line-height:1.1;margin:8px auto 0;width:max-content;max-width:100%}
-.archive-home-banner span{display:inline-block;transition:transform .2s}
-.archive-home-banner span:nth-child(3n+1){color:#ef4845;transform:translateY(3px)}
-.archive-home-banner span:nth-child(3n+2){color:#36a76a;transform:translateY(-3px)}
-.archive-home-banner span:nth-child(3n){color:#407bd6}
-.archive-home-banner:hover span:nth-child(odd){transform:translateY(-8px) rotate(-4deg)}
-.archive-home-banner:hover span:nth-child(even){transform:translateY(6px) rotate(4deg)}
-.archive-nav-page{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-@media(max-width:767px){.archive-nav{padding:12px 14px 16px!important}.archive-nav-left{gap:10px;flex-wrap:wrap;padding-right:63px!important;font-size:13px}.archive-nav-right{right:14px;top:12px;font-size:13px}.archive-home-banner{margin-top:14px;font-size:clamp(28px,8vw,48px)}}
+/* Isolated archive header: avoids the homepage's fixed-position slider/nav rules. */
 body{margin:0}img{max-width:100%;height:auto}iframe{max-width:100%}
-.elementor-image-gallery img{height:auto}
+.ddb-site-header{position:relative;z-index:10;background:white;padding:24px 3vw 0;box-sizing:border-box}
+.ddb-site-nav{display:grid;grid-template-columns:1fr auto;align-items:start;gap:12px;font:16px/1.4 Arial,Helvetica,sans-serif}
+.ddb-nav-left{display:flex;flex-wrap:wrap;gap:clamp(14px,3vw,50px)}
+.ddb-site-nav a{color:#111;text-decoration:none;white-space:nowrap}
+.ddb-site-nav a:hover,.ddb-site-nav a:focus-visible,.ddb-site-nav a[aria-current="page"]{text-decoration:underline}
+.ddb-date{white-space:nowrap;letter-spacing:.08em}
+.ddb-banner{display:block;width:min(760px,85vw);height:clamp(130px,18vw,235px);margin:22px auto 14px;position:relative;text-decoration:none}
+.ddb-banner-inner{display:flex;align-items:flex-start;width:100%;height:100%}
+.ddb-note{display:flex;flex:1 1 0;min-width:0;flex-direction:column;align-items:center;transform:translateY(calc(var(--step)*clamp(12px,2vw,28px)))}
+.ddb-note img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;transform:rotate(90deg)}
+.ddb-note i{display:block;width:80%;height:2px;background:#e72750}
+.ddb-note:nth-child(3n+2) i{background:#2ca64e}
+.ddb-note:nth-child(3n) i{background:#13aadd}
+.ddb-banner:focus-visible{outline:2px solid #13aadd;outline-offset:5px}
+@media(max-width:767px){.ddb-site-header{padding:16px 18px 0}.ddb-site-nav{display:block;font-size:13px}.ddb-nav-left{gap:12px}.ddb-date{display:block;text-align:center;margin-top:12px}.ddb-banner{width:94vw;height:clamp(95px,23vw,150px);margin:15px auto}.ddb-note{transform:translateY(calc(var(--step)*8px))}}
 .archive-carousel-ready .elementor-image-carousel{display:block!important;transform:none!important}
 .archive-carousel-ready .swiper-slide{box-sizing:border-box}
 .archive-carousel-ready .elementor-image-carousel-wrapper{touch-action:pan-y;outline-offset:4px}
@@ -25,73 +22,10 @@ body{margin:0}img{max-width:100%;height:auto}iframe{max-width:100%}
 .archive-lightbox::backdrop{background:rgba(0,0,0,.85)}
 .archive-lightbox img{display:block;object-fit:contain;max-width:90vw;max-height:85vh}
 .archive-lightbox button{position:absolute;top:0;right:4px;border:0;background:#fff;font-size:30px;cursor:pointer}
+.elementor-image-gallery img{height:auto}
 a[href="#unavailable-asset"]{pointer-events:none;cursor:default}
-.archive-bandcamp{max-width:560px;margin:40px auto;padding:18px;text-align:center}
-.archive-bandcamp a{display:inline-block;margin:10px auto;text-decoration:underline}
-
-/* Original homepage header owns its typography and grid, not the old archive nav. */
-.archive-home-header{position:relative;z-index:100;background:#fff}
-.archive-home-header .elementor-element-d01b438{padding-top:20px}
-.archive-home-header .elementor-widget-container a{color:inherit}
-/* Avoid a second exhibition date left over from the recovered inner-page widgets. */
-body:not(.home) .elementor-global-195{display:none!important}
-
-/* Bandcamp block uses the original empty Elementor HTML widget beside the gallery. */
-.elementor-element-473bc90 .elementor-widget-container{width:100%;box-sizing:border-box}
-.archive-bandcamp-player{box-sizing:border-box;width:100%;max-width:100%;padding:12px 8px;display:flex;flex-direction:column;gap:12px;font:14px/1.45 Arial,Helvetica,sans-serif;color:#171717}
-.archive-bandcamp-embed-slot{min-height:180px;background:#f5f5f5;border:1px solid #ddd;padding:15px;display:grid;place-items:center;text-align:center}
-.archive-bandcamp-heading{margin:0;font-weight:bold}
-.archive-bandcamp-heading a{color:inherit;text-decoration:underline}
-.archive-bandcamp-tracklist{margin:0;padding-left:24px;max-height:260px;overflow:auto}
-.archive-bandcamp-tracklist li{display:flex;gap:12px;justify-content:space-between;align-items:baseline;padding:4px 0;border-bottom:1px solid #ddd}
-.archive-bandcamp-tracklist time{font-size:12px;color:#555}
-@media(max-width:767px){.archive-bandcamp-player{padding:12px 4px}.archive-bandcamp-tracklist{max-height:none}}
-
-/* Keep the official large Bandcamp player within the gallery panel. */
-.archive-bandcamp-embed-slot{display:flex;justify-content:center;align-items:flex-start;min-height:0;padding:0;border:0;background:transparent}
-.archive-bandcamp-embed-slot iframe{display:block;width:100%!important;max-width:350px;height:clamp(280px,40vh,430px)!important;border:0}
-.archive-bandcamp-player{max-height:calc(100vh - 160px);overflow-y:auto;overscroll-behavior:contain}
-@media(max-width:767px){.archive-bandcamp-player{max-height:none;overflow:visible}.archive-bandcamp-embed-slot iframe{height:430px!important}}
-
-/* Review proposal: compact letter-instrument, never a second full-size canvas. */
-.archive-compact-logo{display:block;position:relative;z-index:10;width:max-content;max-width:calc(100% - 28px);margin:3px auto 18px;text-decoration:none!important;text-align:center;line-height:1}
-.archive-compact-word{display:flex;justify-content:center;align-items:baseline;white-space:nowrap;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:clamp(24px,3.7vw,56px);letter-spacing:-.065em}
-.archive-compact-word .ddb-letter{display:inline-block;transition:transform .18s ease}
-.archive-compact-word .ddb-letter:nth-child(3n + 1){color:#e53f46;transform:translateY(2px)}
-.archive-compact-word .ddb-letter:nth-child(3n + 2){color:#199e63;transform:translateY(-2px)}
-.archive-compact-word .ddb-letter:nth-child(3n){color:#178ce0}
-.archive-compact-logo:hover .ddb-letter:nth-child(odd){transform:translateY(-6px)}
-.archive-compact-logo:hover .ddb-letter:nth-child(even){transform:translateY(5px)}
-.archive-compact-dots{display:flex;justify-content:space-around;margin:5px auto 0;width:82%}
-.archive-compact-dots i{width:clamp(3px,.5vw,6px);height:clamp(3px,.5vw,6px);border-radius:50%;background:#e53f46}
-.archive-compact-dots i:nth-child(3n + 2){background:#199e63}
-.archive-compact-dots i:nth-child(3n){background:#178ce0}
-.archive-compact-logo:focus-visible{outline:2px solid #178ce0;outline-offset:8px}
-@media(max-width:767px){.archive-compact-logo{margin:6px auto 16px}.archive-compact-word{font-size:clamp(23px,6vw,36px)}}
-@media(prefers-reduced-motion:reduce){.archive-compact-word .ddb-letter{transition:none}}
-/* Allow the album player to grow to the height of its adjacent location text. */
-.archive-bandcamp-player{max-height:none!important;overflow:visible!important}
-.archive-bandcamp-embed-slot iframe{height:var(--ddb-bandcamp-height,430px)!important;max-height:786px}
-
-/* Original archival instrument appearance: independently staggered PNG letters
-   with colored note underlines (reference: December 2022 site recording). */
-.ddb-original-banner{display:block!important;width:min(780px,88vw)!important;max-width:calc(100% - 24px);margin:10px auto 38px!important;text-decoration:none}
-.ddb-banner-letters{display:flex;align-items:flex-start;justify-content:center;height:clamp(125px,14vw,205px);width:100%}
-.ddb-banner-note{--unit:clamp(13px,1.85vw,27px);display:flex;flex:1 1 0;min-width:0;align-items:center;flex-direction:column;position:relative;transform:translateY(calc(var(--note) * var(--unit)))}
-.ddb-banner-note img{width:100%;max-width:78px;height:auto;aspect-ratio:1;object-fit:contain}
-.ddb-banner-note i{display:block;height:2px;width:90%;background:#fc0640}
-.ddb-banner-note:nth-child(3n+2) i{background:#27b74a}
-.ddb-banner-note:nth-child(3n) i{background:#06afe5}
-.ddb-original-banner:hover .ddb-banner-note{filter:brightness(1.12)}
-.ddb-original-banner:focus-visible{outline:2px solid #06afe5;outline-offset:6px}
-@media(max-width:767px){.ddb-original-banner{width:94vw!important;margin-bottom:18px!important}.ddb-banner-letters{height:clamp(75px,22vw,125px)}.ddb-banner-note{--unit:clamp(7px,2vw,13px)}.ddb-banner-note i{height:1px}}
-
-/* PR9: isolate header from logo; match the archival stacked layout. */
-body:not(.home) .archive-home-header{position:relative!important;display:block!important;z-index:30!important;min-height:66px;background:#fff}
-body:not(.home) .ddb-original-banner{position:relative!important;z-index:1!important;display:block!important;clear:both!important;width:min(760px,80vw)!important;height:clamp(115px,17vw,245px)!important;margin:22px auto 22px!important;padding:0!important;overflow:visible}
-body:not(.home) .ddb-banner-letters{width:100%;height:100%;align-items:flex-start}
-body:not(.home) .ddb-banner-note{transform:translateY(calc(var(--note) * clamp(10px,1.3vw,20px)))!important}
-body:not(.home) .ddb-banner-note img{transform:rotate(90deg)!important;max-width:70px;object-fit:contain}
-body:not(.home) .ddb-banner-note i{margin-top:2px}
-body:not(.home) .archive-home-header + .ddb-original-banner + main{position:relative!important;margin-top:0!important;padding-top:0!important}
-@media(max-width:767px){body:not(.home) .archive-home-header{min-height:95px}body:not(.home) .ddb-original-banner{width:94vw!important;height:clamp(100px,24vw,145px)!important;margin:12px auto 18px!important}body:not(.home) .ddb-banner-note{transform:translateY(calc(var(--note) * 7px))!important}body:not(.home) .ddb-banner-note img{max-width:100%}}
+.archive-bandcamp-player{width:100%;box-sizing:border-box;max-height:none;overflow:visible;padding:0}
+.archive-bandcamp-embed-slot{width:100%;padding:0;border:0;background:transparent}
+.archive-bandcamp-embed-slot iframe{display:block;width:100%!important;height:120px!important;max-height:120px!important;border:0}
+.archive-bandcamp-heading{margin:8px 0;font:13px/1.4 Arial,Helvetica,sans-serif}
+.archive-bandcamp-heading a{color:inherit}
