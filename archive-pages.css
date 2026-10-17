@@ -29,3 +29,15 @@ a[href="#unavailable-asset"]{pointer-events:none;cursor:default}
 .archive-bandcamp-embed-slot iframe{display:block;width:100%!important;height:120px!important;max-height:120px!important;border:0}
 .archive-bandcamp-heading{margin:8px 0;font:13px/1.4 Arial,Helvetica,sans-serif}
 .archive-bandcamp-heading a{color:inherit}
+
+/* Notes and Credits: restore archived navigation positions and link hit targets. */
+.archive-restored-header{position:relative;z-index:50;background:#fff;padding:20px 3vw 0;isolation:isolate}
+.archive-restored-nav{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:start;gap:14px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.4}
+.archive-restored-left{display:flex;align-items:center;flex-wrap:wrap;gap:clamp(16px,3vw,50px)}
+.archive-restored-nav a{position:relative!important;inset:auto!important;display:inline-block!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;color:#111;text-decoration:none;white-space:nowrap;pointer-events:auto;z-index:2}
+.archive-restored-date{white-space:nowrap;letter-spacing:.06em}
+.archive-restored-credits{justify-self:end}
+.archive-restored-nav a:hover,.archive-restored-nav a:focus-visible,.archive-restored-nav a[aria-current="page"]{text-decoration:underline}
+body.elementor-page-107 .hoverover,body.elementor-page-144 .hoverover,body.elementor-page-107 .hoverover1,body.elementor-page-144 .hoverover1{position:static!important;top:auto!important;bottom:auto!important;left:auto!important;right:auto!important;width:auto!important;height:auto!important;display:inline!important;margin:0!important;padding:0!important;z-index:auto!important;pointer-events:auto!important}
+body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position:relative;z-index:1;display:block;clear:both;margin:15px auto 12px}
+@media(max-width:767px){.archive-restored-header{padding:16px 16px 0}.archive-restored-nav{grid-template-columns:1fr auto;row-gap:10px;font-size:13px}.archive-restored-left{grid-column:1 / -1;gap:15px}.archive-restored-date{grid-column:1;grid-row:2;white-space:normal}.archive-restored-credits{grid-column:2;grid-row:2}}
