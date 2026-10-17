@@ -46,3 +46,9 @@ body:not(.home) .elementor-global-195{display:none!important}
 .archive-bandcamp-tracklist li{display:flex;gap:12px;justify-content:space-between;align-items:baseline;padding:4px 0;border-bottom:1px solid #ddd}
 .archive-bandcamp-tracklist time{font-size:12px;color:#555}
 @media(max-width:767px){.archive-bandcamp-player{padding:12px 4px}.archive-bandcamp-tracklist{max-height:none}}
+
+/* Keep the official large Bandcamp player within the gallery panel. */
+.archive-bandcamp-embed-slot{display:flex;justify-content:center;align-items:flex-start;min-height:0;padding:0;border:0;background:transparent}
+.archive-bandcamp-embed-slot iframe{display:block;width:100%!important;max-width:350px;height:clamp(280px,40vh,430px)!important;border:0}
+.archive-bandcamp-player{max-height:calc(100vh - 160px);overflow-y:auto;overscroll-behavior:contain}
+@media(max-width:767px){.archive-bandcamp-player{max-height:none;overflow:visible}.archive-bandcamp-embed-slot iframe{height:430px!important}}
