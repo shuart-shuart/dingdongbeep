@@ -106,3 +106,53 @@ body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position
 /* Unobtrusive transparent controls; retain a usable hit target without a disc. */
 .archive-carousel-ready .elementor-swiper-button{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;min-width:32px;min-height:40px;text-shadow:0 0 3px rgba(255,255,255,.9);font-size:clamp(24px,2.4vw,34px)!important}
 @media(max-width:767px){.archive-carousel-ready .elementor-swiper-button{min-width:28px;min-height:36px;font-size:28px!important}}
+
+/* PR20: fluid archive layouts without deleting or reordering slides. */
+html{max-width:100%;overflow-x:clip}
+body:not(.home){max-width:100%;overflow-x:clip}
+body:not(.home) #content,body:not(.home) #main{max-width:100%;min-width:0}
+body:not(.home) .elementor img{max-width:100%;height:auto}
+body:not(.home) .elementor-column,body:not(.home) .elementor-widget-wrap{min-width:0}
+.ddb-unified-header{box-sizing:border-box;width:100%;max-width:100%}
+.ddb-unified-nav{min-width:0}
+.ddb-unified-left{min-width:0;row-gap:8px}
+.ddb-unified-header+.ddb-banner{box-sizing:border-box;max-width:calc(100vw - 32px);width:min(760px,88vw);margin-left:auto!important;margin-right:auto!important}
+.ddb-banner-inner{max-width:100%;min-width:0}
+.ddb-note{min-width:0}
+.ddb-note img{max-width:100%}
+.archive-carousel-ready .elementor-image-carousel-wrapper{position:relative;max-width:100%;min-width:0;overflow:hidden}
+.archive-carousel-ready .elementor-image-carousel{max-width:100%;min-width:0}
+.archive-carousel-ready .swiper-slide{max-width:100%;min-width:0}
+.archive-carousel-ready .swiper-slide img{display:block;max-width:100%;max-height:min(64vh,680px);width:auto;height:auto;object-fit:contain}
+.archive-carousel-ready .elementor-swiper-button{z-index:8}
+.archive-bandcamp-player,.archive-bandcamp-embed-slot{min-width:0;max-width:100%}
+.archive-bandcamp-embed-slot iframe{width:100%!important;max-width:100%!important;min-width:0;height:120px!important}
+@media(min-width:768px) and (max-width:1100px){
+ .ddb-unified-nav{font-size:13px!important;letter-spacing:.06em!important}
+ .ddb-unified-left{gap:clamp(8px,1.6vw,20px)}
+ .ddb-unified-header+.ddb-banner{width:min(680px,82vw)}
+ body:not(.home) .elementor-section .elementor-container{max-width:100%}
+ body:not(.home) .elementor-column .elementor-widget-wrap{padding-left:min(1vw,10px);padding-right:min(1vw,10px)}
+}
+@media(max-width:767px){
+ .ddb-unified-header{padding:14px 14px 4px!important;min-height:0!important}
+ .ddb-unified-nav{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:10px!important;font-size:clamp(11px,2.8vw,14px)!important;letter-spacing:.04em!important;line-height:1.45!important}
+ .ddb-unified-left{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px 18px;max-width:100%}
+ .ddb-unified-date{grid-column:1;grid-row:2;white-space:normal;justify-self:start;text-align:left;word-break:normal}
+ .ddb-unified-credits{grid-column:2;grid-row:2;justify-self:end}
+ .ddb-unified-header+.ddb-banner{width:calc(100% - 28px)!important;height:clamp(78px,27vw,150px)!important;margin-top:clamp(35px,9vw,64px)!important;margin-bottom:clamp(35px,9vw,64px)!important}
+ .ddb-note img{width:100%;max-width:100%}
+ .ddb-note{transform:translateY(calc(var(--step)*clamp(4px,1.7vw,10px)))!important}
+ body:not(.home) #content .elementor-section .elementor-container{display:flex;flex-wrap:wrap;width:100%;max-width:100%}
+ body:not(.home) #content .elementor-column{flex:0 0 100%;width:100%;max-width:100%}
+ body:not(.home) #content .elementor-inner-section .elementor-column{margin-bottom:16px}
+ body:not(.home) #content .elementor-widget-wrap{max-width:100%}
+ .archive-carousel-ready .swiper-slide img{max-width:100%;max-height:55vh}
+ .archive-carousel-ready .elementor-swiper-button{min-width:30px;min-height:42px}
+ .archive-bandcamp-player{padding:0 4px}
+}
+@media(max-width:380px){
+ .ddb-unified-left{gap:8px 12px}
+ .ddb-unified-nav{font-size:11px!important}
+ .ddb-unified-header+.ddb-banner{height:88px!important}
+}
