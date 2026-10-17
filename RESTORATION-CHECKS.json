@@ -1,0 +1,19 @@
+{
+  "homepageRecovered": true,
+  "originalLetterImages": 13,
+  "tunePatterns": 10,
+  "noteRange": "C5\u2013G5",
+  "sequenceNotes": 13,
+  "localAssetsVerified": true,
+  "instrumentLogicTestsPassed": true,
+  "realBrowserVisualAndAudioVerified": false,
+  "missingSubpages": [],
+  "fontFallback": "system sans-serif",
+  "additionalPagesRestored": [
+    "notes",
+    "info",
+    "works",
+    "credits"
+  ],
+  "fullBrowserVerified": false
+}

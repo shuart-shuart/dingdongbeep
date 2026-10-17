@@ -1,0 +1,93 @@
+[
+  {
+    "file": "ddb_d_red1.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_d_red1.png",
+    "bytes": 11267,
+    "sha256": "df2fcce633d2cd71d782b4c87c48734d172613274979b4a93bbb5e80fd677cd4"
+  },
+  {
+    "file": "ddb_i_green.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_i_green.png",
+    "bytes": 5289,
+    "sha256": "e46121c5bd4b4f634a922799ffa0b3609905dd2548d231535435d01e68259ad4"
+  },
+  {
+    "file": "ddb_n_blue.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_n_blue.png",
+    "bytes": 8449,
+    "sha256": "3d115b2a9a20371e2b59c6ec44429e0c492fcaebc15468d632c5519c4da4d8be"
+  },
+  {
+    "file": "ddb_g_red.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_g_red.png",
+    "bytes": 12246,
+    "sha256": "2bb451df0c2b4e1efc02beda616461e082753ef50022f4244a44d1dfd82cb0c2"
+  },
+  {
+    "file": "ddb_d_green.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_d_green.png",
+    "bytes": 11193,
+    "sha256": "cf9878d83846b5cddcd69989dd39c8c002aad2c1b06243e1574c074f6705727b"
+  },
+  {
+    "file": "ddb_o_blue.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_o_blue.png",
+    "bytes": 11588,
+    "sha256": "a06b20a483c4299686221a711ff0becca51a3d0314cc5e066f27d8880ef78976"
+  },
+  {
+    "file": "ddb_n_red.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_n_red.png",
+    "bytes": 8469,
+    "sha256": "0208476d90f1ee41eb718979d5a604f51b40e4b765320c3cf0cda9ec487a42cd"
+  },
+  {
+    "file": "ddb_g_green.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_g_green.png",
+    "bytes": 12208,
+    "sha256": "5978e769f8048b9d7b69b2dfa93a795bc018bc5d9fd808f708fa9e30de2812c7"
+  },
+  {
+    "file": "ddb_b_blue.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_b_blue.png",
+    "bytes": 11175,
+    "sha256": "d6844a335bf906239bbf06523dd16962f888e333795d23eb02c88e4fec674220"
+  },
+  {
+    "file": "ddb_e_red.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_e_red.png",
+    "bytes": 11667,
+    "sha256": "17bc88256f177aa8b2961cf558df54957b841d3625fab000b998f40b87ef1304"
+  },
+  {
+    "file": "ddb_e_green.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_e_green.png",
+    "bytes": 11824,
+    "sha256": "f4f03b9e80cce8cd6e85118250c121e9892fce310d4b402f24180f02dcc7804f"
+  },
+  {
+    "file": "ddb_p_blue.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_p_blue.png",
+    "bytes": 10956,
+    "sha256": "b25e8f4e37f17cd5799153c226ae62cfb963199d190ae17153606e6ec0b71df7"
+  },
+  {
+    "file": "ddb_ex_red.png",
+    "recovered": true,
+    "source": "https://web.archive.org/web/20230629184456im_/https://gideon-jamie.com/ddb/ddb_ex_red.png",
+    "bytes": 4640,
+    "sha256": "d937862fd271d4e9d16d33fec312a3ccfeab0f963285c9a18eb581d84803c1c7"
+  }
+]
