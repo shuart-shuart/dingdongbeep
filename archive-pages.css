@@ -58,3 +58,14 @@ body.elementor-page-107 .ddb-banner,body.elementor-page-144 .ddb-banner{position
 .ddb-unified-date .up{position:relative;top:-2px}.ddb-unified-date .down{position:relative;top:2px}
 .ddb-unified-header + .ddb-banner{position:relative;z-index:1;clear:both;margin:18px auto 12px}
 @media(max-width:767px){.ddb-unified-header{padding:16px 18px 0}.ddb-unified-nav{grid-template-columns:1fr auto;font-size:13px}.ddb-unified-left{grid-column:1/-1;gap:16px}.ddb-unified-date{grid-column:1;grid-row:2;white-space:normal;text-align:left}.ddb-unified-credits{grid-column:2;grid-row:2}}
+
+/* PR14: original slider thumb images are rotated 90deg within CSS on the
+   homepage. In standalone image form undo that angle to display upright. */
+.ddb-banner .ddb-note img{transform:rotate(-90deg)!important}
+.ddb-unified-header{padding:24px 3.7vw 0!important;min-height:58px;z-index:60!important}
+.ddb-unified-nav{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;align-items:start!important;column-gap:12px;font-family:monotype-grotesque,Arial,sans-serif!important;font-size:13px!important;font-weight:400;letter-spacing:1.2px!important}
+.ddb-unified-left{justify-self:start;display:flex;gap:clamp(16px,2.8vw,42px)}
+.ddb-unified-date{grid-column:2;justify-self:center;white-space:nowrap}
+.ddb-unified-credits{grid-column:3;justify-self:end}
+.ddb-unified-header+.ddb-banner{display:block!important;position:relative!important;z-index:1!important;margin:42px auto 20px!important;height:clamp(145px,18vw,245px)!important}
+@media(max-width:767px){.ddb-unified-header{padding:16px 15px 0!important;min-height:88px}.ddb-unified-nav{grid-template-columns:1fr auto!important;row-gap:9px!important;font-size:12px!important}.ddb-unified-left{grid-column:1/-1;gap:15px}.ddb-unified-date{grid-column:1;grid-row:2;justify-self:start;white-space:normal}.ddb-unified-credits{grid-column:2;grid-row:2}.ddb-unified-header+.ddb-banner{margin:22px auto 12px!important;height:clamp(110px,25vw,160px)!important}}
