@@ -220,3 +220,6 @@ body:not(.home) .ddb-unified-header + .ddb-banner + #content{
 @media (max-width:380px){
   body:not(.home) .ddb-unified-header + .ddb-banner{height:auto!important}
 }
+
+/* The archived Swiper loading overlays persist even after images load. */
+body:not(.home) .swiper-lazy-preloader,body:not(.home) .swiper-lazy-preloader::before,body:not(.home) .swiper-lazy-preloader::after{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
