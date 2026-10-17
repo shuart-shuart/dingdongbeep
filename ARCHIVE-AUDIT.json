@@ -1,0 +1,296 @@
+{
+  "pages": [
+    "notes",
+    "info",
+    "works",
+    "credits",
+    "home"
+  ],
+  "bundledAdditionalMedia": 41,
+  "additionalMedia": {
+    "assets/archive-images/dingdongbeep-at-Gillman-Barracks_Credit-to-Marvin-Tang_2.jpeg": {
+      "original": "Notes \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-at-Gillman-Barracks_Credit-to-Marvin-Tang_2.jpeg",
+      "sha256": "e9fbe8d22d731ed845fcf9308a7e279ec91485a32f434a3276816fc23b5ef842",
+      "bytes": 77656
+    },
+    "assets/archive-images/Tinkering2-S.jpg": {
+      "original": "Notes \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Tinkering2-S.jpg",
+      "sha256": "2f55dcc6644b10089031b6e5c85c090dbbd6560c553f256b0accca73e144a93a",
+      "bytes": 551813
+    },
+    "assets/archive-images/truckdaily_26-scaled.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/truckdaily_26-scaled.jpg",
+      "sha256": "7357e363ab961e931d141d76e5e42ea6b586bdcb7a425b42def2f09c7362f15f",
+      "bytes": 738663
+    },
+    "assets/archive-images/truckdaily_01.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/truckdaily_01.jpg",
+      "sha256": "cc6ee3daced3c3796103ec34bb08ccd0a210233151347ba5892d7f9ef32fa63b",
+      "bytes": 1042983
+    },
+    "assets/archive-images/truckdaily_02.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/truckdaily_02.jpg",
+      "sha256": "89635075130f9cd8a3cbc4f9bb401d86ec6d9fbb59dd16b2066ce46491a1e51b",
+      "bytes": 313759
+    },
+    "assets/archive-images/truckdaily_03.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/truckdaily_03.jpg",
+      "sha256": "6e55c065c174fa9446d8ff1362932e4a3889503140c339ca8e5486f8f20ae3de",
+      "bytes": 363642
+    },
+    "assets/archive-images/dingdongbeep-goes-to-work-4.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-goes-to-work-4.jpg",
+      "sha256": "91a963a0caf6a2a062b0c144881a17f0d32b78ea19dc1d4ccccf1a9e0ecbe006",
+      "bytes": 253654
+    },
+    "assets/archive-images/dingdongbeep-goes-to-school-1.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-goes-to-school-1.jpg",
+      "sha256": "b392ca22a7e7a22c207fbc9967b321c634551f9efd94e1c84fd1db66b4637823",
+      "bytes": 568131
+    },
+    "assets/archive-images/dingdongbeep-goes-to-school-2.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-goes-to-school-2.jpg",
+      "sha256": "3e29ed2f74fa71214106adc92f0e5d8cd016366f8687b0a653ad45b908376733",
+      "bytes": 904897
+    },
+    "assets/archive-images/dingdongbeep-goes-to-school-3-e1680239058682.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-goes-to-school-3-e1680239058682.jpg",
+      "sha256": "56a2dee6bff67fd8b45fd9289cd6efa3f18e7d7c09cd755b1cd758f957794d38",
+      "bytes": 141779
+    },
+    "assets/archive-images/z.-Closing-Finale-by-pupa.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/z.-Closing-Finale-by-pupa.jpg",
+      "sha256": "a31aa32fefaee7aef931ad9d6c76a51e507a28da37fa3a028810290ce3c7c4ac",
+      "bytes": 205812
+    },
+    "assets/archive-images/Screening-of-Singapore-GaGa-1.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Screening-of-Singapore-GaGa-1.jpg",
+      "sha256": "800ca59e2d6a95999ab572f9dc3fe03940fbaa2222f8a1f3fed2cbc0820c456a",
+      "bytes": 171013
+    },
+    "assets/archive-images/Screening-of-Singapore-GaGa-2.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Screening-of-Singapore-GaGa-2.jpg",
+      "sha256": "4d8013acb782c95bd14625bccbd0568b06ccfa88531e7545affdb124f5f1236e",
+      "bytes": 132662
+    },
+    "assets/archive-images/Screening-of-Singapore-GaGa-4.jpg": {
+      "original": "info \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Screening-of-Singapore-GaGa-4.jpg",
+      "sha256": "b5071ae876a348fd803a17f8a477eadaf38816b1a737225f34746fbc36e35e64",
+      "bytes": 133593
+    },
+    "assets/archive-images/no-captions_14.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/no-captions_14.jpg",
+      "sha256": "345f855bcc4627d2ae0fe7ed40b12660c0fce0ead3c86ed6d1ff147758a604b1",
+      "bytes": 174880
+    },
+    "assets/archive-images/dingdongbeep-at-Gillman-Barracks-1.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-at-Gillman-Barracks-1.jpg",
+      "sha256": "36542e8bc0569108e630c96764ffd4f1f3ead956baa715ecfd3f1c5401cd9b78",
+      "bytes": 244828
+    },
+    "assets/archive-images/dingdongbeep-at-Gillman-Barracks-2.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-at-Gillman-Barracks-2.jpg",
+      "sha256": "7aeeecbb9f41d3db242b551fdedb91ffd0acfb0ab723c385eb32f85cc4f041a8",
+      "bytes": 236516
+    },
+    "assets/archive-images/dingdongbeep-at-The-Foothills-1.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-at-The-Foothills-1.jpg",
+      "sha256": "b990b3da9c9eee5e39dd1b495eb8a64cf001a45aac85ea35826363ae0ceff740",
+      "bytes": 436562
+    },
+    "assets/archive-images/dingdongbeep-at-The-Foothills-2.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/dingdongbeep-at-The-Foothills-2.jpg",
+      "sha256": "abf892d04e1f06c16aa706b070a106ceaab1e756d5ebde2e4be870de4d339094",
+      "bytes": 356879
+    },
+    "assets/archive-images/Artists-at-dingdongbeep-S.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Artists-at-dingdongbeep-S.jpg",
+      "sha256": "1cc57d3caea5bb03f86eaffae39dd563271cadb6eebd5b2fa2867e339751af73",
+      "bytes": 912386
+    },
+    "assets/archive-images/pieces-of-notes_6.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/pieces-of-notes_6.jpg",
+      "sha256": "80d0a98037247bdd0e7b1427bbed4e88477c89e0cee133010cc6131cfa275398",
+      "bytes": 106808
+    },
+    "assets/archive-images/pieces-of-notes_1.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/pieces-of-notes_1.jpg",
+      "sha256": "007877f00402fe0772583092496b6c09a44fbab1cfdee69153cf6a1eb7475e79",
+      "bytes": 283988
+    },
+    "assets/archive-images/pieces-of-notes_2.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/pieces-of-notes_2.jpg",
+      "sha256": "56bdb8adfa3346f4fa0d35ed251be183f655314eb9e7b66ad03c2bd05431ffd0",
+      "bytes": 213863
+    },
+    "assets/archive-images/pieces-of-notes_3.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/pieces-of-notes_3.jpg",
+      "sha256": "f7512a711a5bbf33f83d8646aca92e69823b7e03f610707ce0a6d75ac69b4a25",
+      "bytes": 193194
+    },
+    "assets/archive-images/pieces-of-notes_4.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/pieces-of-notes_4.jpg",
+      "sha256": "476ae54786415bd3a9a27181fbd4fa2243abd25cc1837030a46e0bb6840d188b",
+      "bytes": 193021
+    },
+    "assets/archive-images/a-note-goes-on-a-stroll-6.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/a-note-goes-on-a-stroll-6.jpg",
+      "sha256": "8fec706bdb458513bf4570445f3755ad99dbf1260a902e3c2cf3d33f9598420e",
+      "bytes": 163762
+    },
+    "assets/archive-images/a-note-goes-on-a-stroll-1.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/a-note-goes-on-a-stroll-1.jpg",
+      "sha256": "93b16d3851f85527f6eadc0cf6ff4666526e904ac8e4757e79bc0739c56ff0d4",
+      "bytes": 181782
+    },
+    "assets/archive-images/a-note-goes-on-a-stroll-2.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/a-note-goes-on-a-stroll-2.jpg",
+      "sha256": "d43fbbdae2d47c017f5e9918abe25c2d56a1aafcbe61c593dd780372cbe1db7f",
+      "bytes": 142923
+    },
+    "assets/archive-images/a-note-goes-on-a-stroll-3.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/a-note-goes-on-a-stroll-3.jpg",
+      "sha256": "0275bfb07718c831716d3021c2159c5ee40638a1744f09f03904518b8e2e7204",
+      "bytes": 148509
+    },
+    "assets/archive-images/a-note-goes-on-a-stroll-4.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/a-note-goes-on-a-stroll-4.jpg",
+      "sha256": "08b7f71060037c087710f8707a52ab399830352e6da78150de595e3969a5aeef",
+      "bytes": 161694
+    },
+    "assets/archive-images/scenes-from-a-note-go-on-a-stroll-11.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/scenes-from-a-note-go-on-a-stroll-11.jpg",
+      "sha256": "f98227f0bbf2e25154fcfd19b5cf469d5570dc2a074152bc8ec0ec61557a89ee",
+      "bytes": 153269
+    },
+    "assets/archive-images/scenes-from-a-note-go-on-a-stroll-0.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/scenes-from-a-note-go-on-a-stroll-0.jpg",
+      "sha256": "ca173b809d4b5f8490aa2d3e3924a644572b45a6ead0150e43233736225c7e5d",
+      "bytes": 131982
+    },
+    "assets/archive-images/scenes-from-a-note-go-on-a-stroll-1.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/scenes-from-a-note-go-on-a-stroll-1.jpg",
+      "sha256": "01d3ffb79b63f58f980eace8af8aa7bc4709bf1e525a150b1a6a2e9717e84a42",
+      "bytes": 117476
+    },
+    "assets/archive-images/scenes-from-a-note-go-on-a-stroll-2.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/scenes-from-a-note-go-on-a-stroll-2.jpg",
+      "sha256": "02005827d6581f7f4183480109ab74c3e8f60d2aad17671a2f9980062ed7bb8a",
+      "bytes": 149868
+    },
+    "assets/archive-images/scenes-from-a-note-go-on-a-stroll-3.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/scenes-from-a-note-go-on-a-stroll-3.jpg",
+      "sha256": "f257a8a12299febe692f4690d4cc40b3e70054aca7243831483f66fbaf99684a",
+      "bytes": 159624
+    },
+    "assets/archive-images/scenes-from-a-note-go-on-a-stroll-4.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/scenes-from-a-note-go-on-a-stroll-4.jpg",
+      "sha256": "f6d15cc28c2868dcce646e5b41a2e91dd7aceadb02cd3b4be6c233db664ca1c9",
+      "bytes": 129567
+    },
+    "assets/archive-images/Sketches-from_a-note-goes-on-a-stroll_-2.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Sketches-from_a-note-goes-on-a-stroll_-2.jpg",
+      "sha256": "fb6f8e67d85af5b277751e56b714e61d5fb06ce50cfd00587c78f8b40f21019d",
+      "bytes": 893732
+    },
+    "assets/archive-images/Brainstorming-Sketches_pixie-S.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Brainstorming-Sketches_pixie-S.jpg",
+      "sha256": "889df9351273fbce51cec6d6f73b5c5f23720dd285e9ad3df692c323c4ce5258",
+      "bytes": 150672
+    },
+    "assets/archive-images/Brainstorming-Sketches_shu-S.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Brainstorming-Sketches_shu-S.jpg",
+      "sha256": "4a12401feb1bf53d1328f0fc7ce3fef13b2e419c775ac8620ebae7cb9286a585",
+      "bytes": 127461
+    },
+    "assets/archive-images/Brainstorming-Sketches_fongyee-S.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Brainstorming-Sketches_fongyee-S.jpg",
+      "sha256": "d4106957e971a7abed5a109226749f8521e542eb278a2b817c6a9caafb45f489",
+      "bytes": 166200
+    },
+    "assets/archive-images/Brainstorming-Sketches_combined-S.jpg": {
+      "original": "works \u0393\u00c7\u00f4 dingdongbeep.xyz_files/Brainstorming-Sketches_combined-S.jpg",
+      "sha256": "97d6751e3478ef54878b8d8bc8e31a0c01aca4756827678d9c5b3219b758c3df",
+      "bytes": 143502
+    }
+  },
+  "unavailableMediaOrResources": {
+    "truckdaily_04.jpg": 2,
+    "truckdaily_05.jpg": 2,
+    "truckdaily_06.jpg": 2,
+    "truckdaily_07.jpg": 2,
+    "truckdaily_08.jpg": 2,
+    "truckdaily_09.jpg": 2,
+    "truckdaily_10.jpg": 2,
+    "truckdaily_11-scaled.jpg": 2,
+    "truckdaily_12-scaled.jpg": 2,
+    "truckdaily_13-scaled.jpg": 2,
+    "truckdaily_14-scaled.jpg": 2,
+    "truckdaily_15-scaled.jpg": 2,
+    "truckdaily_16-scaled.jpg": 2,
+    "truckdaily_17.jpg": 2,
+    "truckdaily_18-scaled.jpg": 2,
+    "truckdaily_19-scaled.jpg": 2,
+    "truckdaily_20-scaled.jpg": 2,
+    "truckdaily_21-scaled.jpg": 2,
+    "truckdaily_22-scaled.jpg": 2,
+    "truckdaily_23-scaled.jpg": 2,
+    "truckdaily_24-scaled.jpg": 2,
+    "truckdaily_25.jpg": 2,
+    "dingdongbeep-goes-to-school-4-e1680239090335.jpg": 2,
+    "dingdongbeep-goes-to-school-5-e1680239136752.jpg": 2,
+    "dingdongbeep-goes-to-school-6-e1680239199506.jpg": 2,
+    "dingdongbeep-goes-to-school-7-e1680239261289.jpg": 2,
+    "dingdongbeep-goes-to-school-8-e1680239275556.jpg": 2,
+    "dingdongbeep-goes-to-school-9-e1680239303789.jpg": 2,
+    "dingdongbeep-goes-to-school-10.jpg": 2,
+    "dingdongbeep-goes-to-school-11-e1680239327776.jpg": 2,
+    "dingdongbeep-goes-to-work-1-e1680239345232.jpg": 2,
+    "dingdongbeep-goes-to-work-2.jpg": 2,
+    "dingdongbeep-goes-to-work-3.jpg": 2,
+    "Screening-of-Singapore-GaGa-5.jpg": 2,
+    "Screening-of-Singapore-GaGa-6.jpg": 2,
+    "Screening-of-Singapore-GaGa-7.jpg": 2,
+    "Sharing-by-Artists-1.jpg": 2,
+    "Sharing-by-Artists-2.jpg": 2,
+    "Sharing-by-Artists-3.jpg": 2,
+    "dingdongbeep-at-The-Foothills-3.jpg": 2,
+    "dingdongbeep-at-WS42-Old-Centre-42.jpg": 2,
+    "no-captions_1.jpg": 2,
+    "no-captions_2.jpg": 2,
+    "no-captions_3.jpg": 2,
+    "no-captions_4.jpg": 2,
+    "no-captions_5.jpg": 2,
+    "no-captions_6.jpg": 2,
+    "no-captions_7.jpg": 2,
+    "no-captions_8.jpg": 2,
+    "no-captions_10.jpg": 2,
+    "no-captions_11.jpg": 2,
+    "no-captions_12.jpg": 2,
+    "no-captions_13.jpg": 2,
+    "pieces-of-notes_5.jpg": 2,
+    "a-note-goes-on-a-stroll-5.jpg": 2,
+    "scenes-from-a-note-go-on-a-stroll-5.jpg": 2,
+    "scenes-from-a-note-go-on-a-stroll-6.jpg": 2,
+    "scenes-from-a-note-go-on-a-stroll-7.jpg": 2,
+    "scenes-from-a-note-go-on-a-stroll-8.jpg": 2,
+    "scenes-from-a-note-go-on-a-stroll-9.jpg": 2,
+    "scenes-from-a-note-go-on-a-stroll-10.jpg": 2,
+    "0-Prototyping-for_scenes-from-a-note-goes-on-a-stroll_1-S.jpg": 2,
+    "0-Prototyping-for_scenes-from-a-note-goes-on-a-stroll_2-S.jpg": 2,
+    "Discussion-at-The-Made-Agency.jpg": 2,
+    "Fitting-out-for-dingdongbeep_1.jpg": 2,
+    "Fitting-out-for-dingdongbeep-2.jpg": 2,
+    "Installing-Vinyl-for-dingdongbeep-1.jpg": 2,
+    "Installing-Vinyl-for-dingdongbeep-2.jpg": 2,
+    "Sketches-from-_a-note-goes-on-a-stroll_-1.jpg": 2,
+    "Sketches-from-_a-note-goes-on-a-stroll_-3.jpg": 2,
+    "SAW_Black.png": 1,
+    "NAC-black-01.png": 1,
+    "NParks-logo-01.png": 1
+  },
+  "notes": [
+    "Original gallery images absent from supplied ZIP cannot be generated faithfully.",
+    "Full end-to-end visual and audio browser verification was not performed."
+  ]
+}

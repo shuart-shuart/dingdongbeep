@@ -1,0 +1,5 @@
+/* Small archive-only navigation; original Elementor layouts and typography remain intact. */
+.archive-nav{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:clamp(12px,3vw,34px);padding:18px 12px;position:relative;z-index:100;background:#fff;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+.archive-nav a{color:#111;text-decoration:none}.archive-nav a:hover,.archive-nav a:focus{text-decoration:underline}
+body{margin:0}img{max-width:100%;height:auto}iframe{max-width:100%}
+.elementor-image-gallery img{height:auto}a[href="#unavailable-asset"]{pointer-events:none;cursor:default}
