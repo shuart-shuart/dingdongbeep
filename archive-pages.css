@@ -85,3 +85,13 @@ body:not(.home) .elementor-global-195{display:none!important}
 .ddb-original-banner:hover .ddb-banner-note{filter:brightness(1.12)}
 .ddb-original-banner:focus-visible{outline:2px solid #06afe5;outline-offset:6px}
 @media(max-width:767px){.ddb-original-banner{width:94vw!important;margin-bottom:18px!important}.ddb-banner-letters{height:clamp(75px,22vw,125px)}.ddb-banner-note{--unit:clamp(7px,2vw,13px)}.ddb-banner-note i{height:1px}}
+
+/* PR9: isolate header from logo; match the archival stacked layout. */
+body:not(.home) .archive-home-header{position:relative!important;display:block!important;z-index:30!important;min-height:66px;background:#fff}
+body:not(.home) .ddb-original-banner{position:relative!important;z-index:1!important;display:block!important;clear:both!important;width:min(760px,80vw)!important;height:clamp(115px,17vw,245px)!important;margin:22px auto 22px!important;padding:0!important;overflow:visible}
+body:not(.home) .ddb-banner-letters{width:100%;height:100%;align-items:flex-start}
+body:not(.home) .ddb-banner-note{transform:translateY(calc(var(--note) * clamp(10px,1.3vw,20px)))!important}
+body:not(.home) .ddb-banner-note img{transform:rotate(90deg)!important;max-width:70px;object-fit:contain}
+body:not(.home) .ddb-banner-note i{margin-top:2px}
+body:not(.home) .archive-home-header + .ddb-original-banner + main{position:relative!important;margin-top:0!important;padding-top:0!important}
+@media(max-width:767px){body:not(.home) .archive-home-header{min-height:95px}body:not(.home) .ddb-original-banner{width:94vw!important;height:clamp(100px,24vw,145px)!important;margin:12px auto 18px!important}body:not(.home) .ddb-banner-note{transform:translateY(calc(var(--note) * 7px))!important}body:not(.home) .ddb-banner-note img{max-width:100%}}
