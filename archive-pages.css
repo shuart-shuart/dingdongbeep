@@ -292,3 +292,80 @@ body:not(.home) .ddb-unified-header + .ddb-banner + #content{
    padding-top:calc(var(--step) * clamp(3px,1.45vw,9px));
  }
 }
+
+/* PR24: a single responsive flow for instrument and page content.
+   Previous sibling-dependent margin/height rules no longer apply because
+   the banner and main now share a parent. */
+body:not(.home) .ddb-shared-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  align-content:start;
+  row-gap:clamp(12px,2.5vw,32px);
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  margin:clamp(24px,4vw,56px) auto 0;
+  padding:0;
+  box-sizing:border-box;
+}
+body:not(.home) .ddb-shared-layout > .ddb-banner{
+  display:block!important;
+  position:relative!important;
+  float:none!important;
+  clear:none!important;
+  transform:none!important;
+  width:min(760px,calc(100% - 28px))!important;
+  max-width:calc(100% - 28px)!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:0 auto!important;
+  padding:0!important;
+  box-sizing:border-box;
+  overflow:visible;
+}
+body:not(.home) .ddb-shared-layout .ddb-banner-inner{
+  display:grid!important;
+  grid-template-columns:repeat(13,minmax(0,1fr));
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  align-items:start!important;
+}
+body:not(.home) .ddb-shared-layout .ddb-note{
+  display:block!important;
+  position:static!important;
+  width:100%;
+  min-width:0;
+  height:auto!important;
+  padding-top:calc(var(--step) * clamp(5px,1.3vw,17px));
+  margin:0!important;
+  transform:none!important;
+  box-sizing:border-box;
+}
+body:not(.home) .ddb-shared-layout .ddb-note img{
+  display:block!important;
+  position:static!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:auto!important;
+  aspect-ratio:1;
+  object-fit:contain;
+  transform:rotate(-90deg)!important;
+}
+body:not(.home) .ddb-shared-layout > .ddb-shared-content{
+  display:block!important;
+  position:relative!important;
+  float:none!important;
+  clear:none!important;
+  transform:none!important;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  margin:0!important;
+  padding:0!important;
+  box-sizing:border-box;
+}
+@media(max-width:767px){
+  body:not(.home) .ddb-shared-layout{row-gap:clamp(10px,3vw,20px);margin-top:clamp(18px,5vw,36px)}
+  body:not(.home) .ddb-shared-layout .ddb-note{padding-top:calc(var(--step) * clamp(2px,1.1vw,7px))}
+}
