@@ -93,17 +93,3 @@ document.addEventListener('DOMContentLoaded',()=>{
  });
 });
 
-/* Match the album iframe to the height of the neighboring location details.
-   Keep the native Bandcamp iframe scrollable for its full album tracklist. */
-document.addEventListener('DOMContentLoaded',()=>{
- const player=document.querySelector('.archive-bandcamp-player');
- const details=document.querySelector('.elementor-element-b6153ed');
- if(!player||!details)return;
- const resize=()=>{
-  const height=Math.max(300,Math.min(786,Math.ceil(details.getBoundingClientRect().height)));
-  player.style.setProperty('--ddb-bandcamp-height',height+'px');
- };
- resize();
- if(typeof ResizeObserver!=='undefined')new ResizeObserver(resize).observe(details);
- else window.addEventListener('resize',resize);
-});
