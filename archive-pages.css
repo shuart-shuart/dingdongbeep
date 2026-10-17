@@ -35,3 +35,14 @@ a[href="#unavailable-asset"]{pointer-events:none;cursor:default}
 .archive-home-header .elementor-widget-container a{color:inherit}
 /* Avoid a second exhibition date left over from the recovered inner-page widgets. */
 body:not(.home) .elementor-global-195{display:none!important}
+
+/* Bandcamp block uses the original empty Elementor HTML widget beside the gallery. */
+.elementor-element-473bc90 .elementor-widget-container{width:100%;box-sizing:border-box}
+.archive-bandcamp-player{box-sizing:border-box;width:100%;max-width:100%;padding:12px 8px;display:flex;flex-direction:column;gap:12px;font:14px/1.45 Arial,Helvetica,sans-serif;color:#171717}
+.archive-bandcamp-embed-slot{min-height:180px;background:#f5f5f5;border:1px solid #ddd;padding:15px;display:grid;place-items:center;text-align:center}
+.archive-bandcamp-heading{margin:0;font-weight:bold}
+.archive-bandcamp-heading a{color:inherit;text-decoration:underline}
+.archive-bandcamp-tracklist{margin:0;padding-left:24px;max-height:260px;overflow:auto}
+.archive-bandcamp-tracklist li{display:flex;gap:12px;justify-content:space-between;align-items:baseline;padding:4px 0;border-bottom:1px solid #ddd}
+.archive-bandcamp-tracklist time{font-size:12px;color:#555}
+@media(max-width:767px){.archive-bandcamp-player{padding:12px 4px}.archive-bandcamp-tracklist{max-height:none}}
