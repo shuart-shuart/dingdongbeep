@@ -28,3 +28,10 @@ body{margin:0}img{max-width:100%;height:auto}iframe{max-width:100%}
 a[href="#unavailable-asset"]{pointer-events:none;cursor:default}
 .archive-bandcamp{max-width:560px;margin:40px auto;padding:18px;text-align:center}
 .archive-bandcamp a{display:inline-block;margin:10px auto;text-decoration:underline}
+
+/* Original homepage header owns its typography and grid, not the old archive nav. */
+.archive-home-header{position:relative;z-index:100;background:#fff}
+.archive-home-header .elementor-element-d01b438{padding-top:20px}
+.archive-home-header .elementor-widget-container a{color:inherit}
+/* Avoid a second exhibition date left over from the recovered inner-page widgets. */
+body:not(.home) .elementor-global-195{display:none!important}
